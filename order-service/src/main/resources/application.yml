@@ -24,3 +24,9 @@ feign:
       #            timeoutInMilliseconds: 2000
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+
+#添加扫包
+swagger:
+  base-package: com.example.ordersservice.controller
+

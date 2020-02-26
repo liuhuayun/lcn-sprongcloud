@@ -5,6 +5,10 @@ import com.example.ordersservice.entity.Employee;
 import com.example.ordersservice.service.EmployeeService;
 import com.example.ordersservice.service.OrderFeginService;
 import com.example.ordersservice.service.biz.CeshiService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -17,6 +21,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("employee")
+@Api("员工接口服务")
 public class EmployeeController {
     /**
      * 服务对象
@@ -38,8 +43,10 @@ public class EmployeeController {
         return this.employeeService.queryById(id);
     }
 
-    @RequestMapping("/insert")
-    public Object insertTest() {
+    @GetMapping("/insert")
+    @ApiOperation("测试分布式事务框架lcn")
+    @ApiImplicitParam(name="name",value = "用户名")
+    public Object insertTest(String name) {
         ceshiService.testInsert();
         return "success";
     }

@@ -1,5 +1,7 @@
 package com.example.memberservice.entity;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 /**
@@ -10,9 +12,10 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
     private static final long serialVersionUID = 203726375072258108L;
-    
+
+    @ApiModelProperty(name = "id",value = "用户id")
     private Integer id;
-    
+    @ApiModelProperty(name = "name",value = "用户名")
     private String name;
 
 

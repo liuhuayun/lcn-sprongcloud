@@ -17,3 +17,7 @@ feign:
     enabled: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+#添加扫包
+swagger:
+  base-package: com.example.memberservice.controller

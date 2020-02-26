@@ -3,9 +3,14 @@ package com.example.memberservice.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.example.memberservice.entity.User;
 import com.example.memberservice.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 
 /**
  * (User)表控制层
@@ -15,6 +20,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("user")
+@Api("用户接口服务")
 public class UserController {
     /**
      * 服务对象
@@ -34,13 +40,16 @@ public class UserController {
     }
 
 
-
-    @RequestMapping("/insertUser")
-    public int insertUser(@RequestBody JSONObject jsonObject){
-        System.out.println(jsonObject);
-        String name = jsonObject.getString("name");
-        User user=new User();
-        user.setName(name);
+    /**
+     * @RequestBody JSONObject jsonObject
+     * @param jsonObject
+     * @return
+     */
+    @PostMapping("/insertUser")
+    @ApiOperation("测试分布式事务框架lcn")
+    public int insertUser(@RequestBody User user){
+        System.out.println(user.getName());
+        String name =user.getName();
         userService.insert(user);
         return 1;
     }

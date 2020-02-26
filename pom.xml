@@ -93,6 +93,21 @@
             <version>5.0.2.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter -->
+        <!---swagger 接口文档生成-->
+        <!-- https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter -->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.9.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>26.0-jre</version>
+        </dependency>
+
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
