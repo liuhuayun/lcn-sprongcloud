@@ -28,7 +28,7 @@ class DocumentationConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
         List resources = new ArrayList<>();
-        // app-itmayiedu-order name可以自定义 location serviceName 根据自己情况写 后边拼接写死
+        //  name可以自定义 location serviceName 根据自己情况写 后边拼接写死
         resources.add(swaggerResource("api-member-service", "/api-member/v2/api-docs", "2.0"));
         resources.add(swaggerResource("api-order-service", "/api-order/v2/api-docs", "2.0"));
         return resources;
