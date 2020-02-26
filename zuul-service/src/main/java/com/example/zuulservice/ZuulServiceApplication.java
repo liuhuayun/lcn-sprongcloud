@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class ZuulServiceApplication {
     /**
      * 搭建zuul网关服务
-     * 根据网关调用接口
+     * 根据网关调用接口 http://localhost:8765/swagger-ui.html
      * http://127.0.0.1:8765/api-order/order/getUsersByFegin
      * @param args
      */
