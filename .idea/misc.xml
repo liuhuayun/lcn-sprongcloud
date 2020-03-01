@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lcn-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/aoth-server/pom.xml" />
       </list>
     </option>
   </component>

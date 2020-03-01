@@ -12,6 +12,7 @@
         <module name="eureka-server" />
         <module name="lcn-manager" />
         <module name="member-service" />
+        <module name="oath-server" />
         <module name="order-service" />
         <module name="zuul-service" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="lcn-base" target="1.5" />
       <module name="lcn-manager" target="1.8" />
       <module name="member-service" target="1.8" />
+      <module name="oath-server" target="1.8" />
       <module name="order-service" target="1.8" />
       <module name="springcloud" target="1.8" />
       <module name="zuul-service" target="1.8" />

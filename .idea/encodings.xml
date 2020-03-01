@@ -6,11 +6,9 @@
     <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lcn-base" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lcn-manager" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lcn-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lcn-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/member-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oath-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul-service" charset="UTF-8" />
   </component>

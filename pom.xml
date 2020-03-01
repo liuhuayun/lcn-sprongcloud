@@ -37,6 +37,7 @@
         <!--接口包-->
         <module>base-model-order</module>
         <module>lcn-manager</module>
+        <module>oath-server</module>
     </modules>
 
     <dependencies>
