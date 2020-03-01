@@ -20,6 +20,10 @@ public class FallBackOrderFeginService implements OrderFeginService {
 
     @Override
     public JSONObject insertUser(Map<String,String> jsonObject) {
-        return new JSONObject();
+        System.out.println("异常 进入FallBackOrderFeginService.insertUser");
+        JSONObject jsonObject1=new JSONObject();
+        jsonObject1.put("key","callback.insertUser");
+        System.out.println(jsonObject1.toJSONString());
+        return jsonObject1;
     }
 }
