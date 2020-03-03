@@ -12,6 +12,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 1
+  redis:
+    host: 122.51.71.115
+    database: 0
+    timeout: 2000s
+
 feign:
   hystrix:
     enabled: true
@@ -29,4 +34,3 @@ mybatis:
 #添加扫包
 swagger:
   base-package: com.example.ordersservice.controller
-
